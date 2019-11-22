@@ -212,25 +212,6 @@
 			that.listenShortcut();
 			that.initFlow();
 			that.listenPage();
-			
-			setTimeout(function() {
-				ZFSN.consoleLog([
-					'欢迎使用VFD流程设计器!', 
-					'当前版本：' + that.info.version,
-					'Powered by ' + that.info.author,
-					'码云：' + that.info.gitee
-				]);
-				that.$notification.open({
-					placement: 'bottomRight',
-					message: '欢迎使用VFD流程设计器!',
-					description: <p>
-									当前版本：1.0.5<br />
-									Powered by ZSFN<br />
-									码云：<a target="blank" href="https://gitee.com/yjblogs/VFD">VFD流程设计器</a>
-								</p>,
-					icon: <a-icon type="smile" style="color: #108ee9" />
-				});
-			}, 1000);
 		},
 		data () {
 			return {
